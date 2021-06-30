@@ -7,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Reminder List View Controller-->
         <scene sceneID="3am-cc-eTC">
             <objects>
-                <tableViewController id="EYE-E9-sXr" sceneMemberID="viewController">
+                <tableViewController id="EYE-E9-sXr" customClass="ReminderListViewController" customModule="Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sHH-xp-giM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="1rR-BK-K6o">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderListCell" rowHeight="99" id="1rR-BK-K6o" customClass="ReminderListCell" customModule="Today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1rR-BK-K6o" id="a8H-ul-ejT">
@@ -30,6 +30,9 @@
                                                 <constraint firstAttribute="width" constant="44" id="mPf-C7-muw"/>
                                             </constraints>
                                             <state key="normal" backgroundImage="circle" catalog="system"/>
+                                            <connections>
+                                                <action selector="doneButtonTriggered:" destination="1rR-BK-K6o" eventType="touchUpInside" id="3bK-2U-zCh"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdK-D3-48t">
                                             <rect key="frame" x="60" y="20" width="33" height="21"/>
@@ -56,6 +59,11 @@
                                         <constraint firstItem="KdK-D3-48t" firstAttribute="top" secondItem="a8H-ul-ejT" secondAttribute="top" constant="20" symbolic="YES" id="wfc-ky-51d"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="YcP-TH-MEC" id="vk7-xd-NfN"/>
+                                    <outlet property="doneButton" destination="IgH-cc-UHF" id="Zoq-I7-2nD"/>
+                                    <outlet property="titleLabel" destination="KdK-D3-48t" id="s89-uM-v8u"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
