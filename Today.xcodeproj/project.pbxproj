@@ -21,6 +21,7 @@
 		01B1E19426954EF8006D0E2B /* EditTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E19326954EF8006D0E2B /* EditTitleCell.swift */; };
 		01B1E19626954F6F006D0E2B /* EditDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E19526954F6F006D0E2B /* EditDateCell.swift */; };
 		01B1E19826954FD9006D0E2B /* EditNotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E19726954FD9006D0E2B /* EditNotesCell.swift */; };
+		01B1E19A269D32D6006D0E2B /* ReminderDetailEditDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E199269D32D6006D0E2B /* ReminderDetailEditDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		01B1E19326954EF8006D0E2B /* EditTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTitleCell.swift; sourceTree = "<group>"; };
 		01B1E19526954F6F006D0E2B /* EditDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDateCell.swift; sourceTree = "<group>"; };
 		01B1E19726954FD9006D0E2B /* EditNotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesCell.swift; sourceTree = "<group>"; };
+		01B1E199269D32D6006D0E2B /* ReminderDetailEditDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailEditDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				01B1E18E269505C9006D0E2B /* ReminderListDataSource.swift */,
 				012BE8E5268D684400296B53 /* ReminderDetailViewController.swift */,
 				01B1E1902695438F006D0E2B /* ReminderDetailViewDataSource.swift */,
+				01B1E199269D32D6006D0E2B /* ReminderDetailEditDataSource.swift */,
 				012BE8E1268A3BCB00296B53 /* Reminder.swift */,
 				01B1E19226954EBE006D0E2B /* Views */,
 				012BE8D3268A3A3400296B53 /* Main.storyboard */,
@@ -180,6 +183,7 @@
 				01B1E19626954F6F006D0E2B /* EditDateCell.swift in Sources */,
 				012BE8E2268A3BCB00296B53 /* Reminder.swift in Sources */,
 				01B1E18F269505C9006D0E2B /* ReminderListDataSource.swift in Sources */,
+				01B1E19A269D32D6006D0E2B /* ReminderDetailEditDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
